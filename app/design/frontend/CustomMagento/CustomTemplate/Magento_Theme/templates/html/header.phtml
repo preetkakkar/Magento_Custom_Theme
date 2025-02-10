@@ -1,6 +1,6 @@
 
-<link rel="stylesheet" href="/pub/static/frontend/AMI/marsafe/en_US/css/swiper.css"> 
-<link rel="stylesheet" href="/pub/static/frontend/AMI/marsafe/en_US/css/megamenu.min.css"> 
+<link rel="stylesheet" href="/pub/static/frontend/CustomMagento/CustomTemplate/en_US/css/swiper.css"> 
+<link rel="stylesheet" href="/pub/static/frontend/CustomMagento/CustomTemplate/en_US/css/megamenu.min.css"> 
 <style>
 	
 h1{
@@ -15,7 +15,7 @@ h1{
 		
 	}
 
-.ami-header{
+.web-header{
 	background: none;
 	color: #3A3A3C;	
 	display:flex; 
@@ -110,7 +110,7 @@ a:visited .arrow-bullets {
     top: -2px;
 }
 		
-.ami-head-nav {
+.web-head-nav {
   background: #1E1E1E;	
   margin: 0 auto;
   padding: 0; 
@@ -119,7 +119,7 @@ a:visited .arrow-bullets {
 
 
 	
-.ami-nav-bar{
+.web-nav-bar{
 /*	max-width: 1160px;*/
   	margin: 0 auto;
     text-align: center;
@@ -584,7 +584,7 @@ ul>li{
 	
 @media only screen and (max-width: 1486px) {
 	
-.ami-head-nav {
+.web-head-nav {
   flex-wrap: wrap;
 	}
 
@@ -592,13 +592,13 @@ ul>li{
 	margin: 0 auto;
 }
 	
-.ami-nav-bar{
+.web-nav-bar{
 	width: 100%;
     text-align: center;
     margin-top: 10px;
 	}
 	
-.ami-searchbar{
+.web-searchbar{
 
 	margin: 0 auto 20px auto;
 	}
@@ -647,9 +647,6 @@ ul>li{
 	.header-middle-container {
     width: 40%;
 	}
-	.featured-introtext {
-    font-size: 20px;
-	}
 	.header-right-container {
     width: 35%;
 	}
@@ -657,11 +654,11 @@ ul>li{
 
 	
 @media only screen and (max-width: 980px) {
- .ami-mastleft {
+ .web-mastleft {
     width: 42%;
 	} 
 
-.ami-mastright {
+.web-mastright {
     width: 55%;
 	}
 	
@@ -675,7 +672,7 @@ ul>li{
 
 	
 @media only screen and (max-width: 920px) {
-.ami-masthead a {
+.web-masthead a {
 	padding: 0 15px;
 	}
 }
@@ -719,7 +716,7 @@ ul>li{
 }
 	
 @media only screen and (max-width: 840px) {
-.ami-masthead a {
+.web-masthead a {
 	padding: 0 10px;
 	font-size: 1.4rem;
 	}
@@ -794,15 +791,15 @@ Mobile style's
         display: block;
     }
 	
-	.ami-mastleft > ul {
+	.web-mastleft > ul {
         display: none;
     }
-	.ami-mastleft > ul > li {
+	.web-mastleft > ul > li {
         width: 100%;
         float: none;
         display: block;
     }
-    .ami-mastleft > ul > li a {
+    .web-mastleft > ul > li a {
         padding: 1.5em;
         width: 100%;
         display: block;
@@ -821,32 +818,32 @@ Mobile style's
 		font-weight: normal;
     }
 	
-	.ami-masthead a {
+	.web-masthead a {
 	font-size: 1.5rem;
 }
 
-	 .ami-mastleft .show-on-mobile {
+	 .web-mastleft .show-on-mobile {
         display: block;
     }
-	.ami-mastright > ul {
+	.web-mastright > ul {
         display: none;
     }
-	.ami-mastright > ul > li {
+	.web-mastright > ul > li {
         width: 100%;
         float: none;
         display: block;
     }
-    .ami-mastright > ul > li a {
+    .web-mastright > ul > li a {
         padding: 1.5em;
         width: 100%;
         display: block;
     }
 	
-	 .ami-mastright .show-on-mobile {
+	 .web-mastright .show-on-mobile {
         display: block;
     }
 	
-	.ami-nav-bar{
+	.web-nav-bar{
 		background: #1e1e1e;
 		margin: 20px 0 -1px 0;
 	}
@@ -979,9 +976,9 @@ Mobile style's
 </style>
 
 
-<div class="ami-header">
+<div class="web-header">
 	<div class="logo-img">
-		<a class="logo" href="/" title="Marsafe"><img src="/images/ami/marsafe-logo.png" alt="marsafe logo"  /></a>
+		<a class="logo" href="/" title="CustomTemplate"><img src="/images/web/CustomTemplate-logo.png" alt="CustomTemplate logo"  /></a>
 	</div>
 	<div class="header-middle-container">
 		
@@ -992,8 +989,8 @@ Mobile style's
    
 </div>
 
-<div class="ami-head-nav">
-	<div class="ami-nav-bar">
+<div class="web-head-nav">
+	<div class="web-nav-bar">
 		<div class="menu">
 			<ul class="clearfix">
 				<?php  echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Magento_Theme::html/topmenu/renderer.phtml")->toHtml(); ?>
@@ -1045,7 +1042,7 @@ require(['jquery'], function($) {
         //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
 
         // if($(window).width() > 974) {
-        $(".ami-nav-bar > .menu").before("<a href=\"#\" class=\"menu-mobile\"></a>");
+        $(".web-nav-bar > .menu").before("<a href=\"#\" class=\"menu-mobile\"></a>");
         // } else {
         // 	$(".ns_mastright > .ph_mob").before("<a href=\"#\" class=\"menu-mobile\"></a>");
         // }
@@ -1061,16 +1058,16 @@ require(['jquery'], function($) {
         $(".menu > ul > li").click(function() {
             if ($(window).width() <= 768) {
                 $(this).children("ul").fadeToggle(150);
-		//		$(".menu").appendTo(".ami-mastleft");
-		//		$(".ami-mastleft").appendTo(".ami-mastright");
+		//		$(".menu").appendTo(".web-mastleft");
+		//		$(".web-mastleft").appendTo(".web-mastright");
             }
         });
         //If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
 
         $(".menu-mobile").click(function(e) {
             $(".menu > ul").toggleClass('show-on-mobile');
-		//	$(".ami-mastleft > ul").toggleClass('show-on-mobile');
-		//	$(".ami-mastright > ul").toggleClass('show-on-mobile');
+		//	$(".web-mastleft > ul").toggleClass('show-on-mobile');
+		//	$(".web-mastright > ul").toggleClass('show-on-mobile');
             e.preventDefault();
         });
 		
@@ -1122,24 +1119,24 @@ require(['jquery'], function($) {
 		
 		<div class="swiper-slide" style="background-color:#025eed; background-image: url('/images/slider/banten.png');">
 			<div class="swiper-content left">
-				<h1>Marsafe</h1>
-                <h3>Save on Life Jackets</h3>
+				<h1>CustomTemplate</h1>
+                <h3>Save on these products</h3>
                 <a href="/products.html" class="sub-btn">View Products</a>
             </div>
         </div>
 
         <div class="swiper-slide" style="background-color:#c9c9c9; background-image: url('/images/slider/desalination.png');">
 			<div class="swiper-content left">
-				<h1>Life Rafts</h1>
-                <h3>Service and Rent life rafts</h3>
+				<h1>Product Category</h1>
+                <h3>Check the range</h3>
                 <a href="" class="sub-btn">Learn More</a>
             </div>
         </div>
 		
-		 <div class="swiper-slide" style="background-color:#c9c9c9; background-image: url('/images/slider/AMI-Group-Focus.png');">
+		 <div class="swiper-slide" style="background-color:#c9c9c9; background-image: url('/images/slider/web-Group-Focus.png');">
 			<div class="swiper-content left">
 				<h1>Download</h1>
-                <h3>Life Jacket Booklet</h3>
+                <h3>Our new Catalog Booklet</h3>
                 <a href="" class="sub-btn">Download</a>
             </div>
         </div>

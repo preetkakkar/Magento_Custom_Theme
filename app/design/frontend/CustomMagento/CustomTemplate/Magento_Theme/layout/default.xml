@@ -14,10 +14,6 @@
         <referenceBlock name="category.product.addto.compare" remove="true"/> <!-- Category add compare -->
         <referenceBlock name="view.addto.compare" remove="true" /> <!-- Product addto compare -->
 		<referenceBlock name="wishlist_sidebar" remove="true" />
-		<referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true" />
-		<referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true" />
-		<referenceBlock name="customer-account-navigation-account-edit-link" remove="true" />
-		<referenceBlock name="customer-account-navigation-delimiter-1" remove="true" />
 		<move element="minicart" destination="custom_header" before="topSearch" />
         <move element="top.search" destination="custom_header" after="-" />
 		<move element="top.links" destination="custom_header" before="-" />

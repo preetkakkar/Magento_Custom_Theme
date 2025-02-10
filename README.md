@@ -6,8 +6,14 @@ This includes custom template files for Magento 2, featuring a Swiper slider on 
 
 ✔ Responsive Design – Optimized for all devices (desktop, tablet, mobile).<br>
 ✔ Swiper Slider – Add dynamic banners on the homepage.<br>
-✔ Mega Menu – Full-width dropdowns for better navigation.<br>
+✔ Mega Menu (Products Menu Example) – Displays all main categories and their subcategories for easy navigation.<br>
 ✔ Custom Styling – Easily update colors, fonts, and layouts.<br>
+
+
+## Mega Menu Setup:
+	The Products Menu serves as an example of the Mega Menu, displaying main categories and subcategories.<br>
+	Code to fetch categories is already included in renderer.phtml.<br>
+	If needed, edit the category ID in the file for customization.<br>
 
 ## Installation Steps:
 
