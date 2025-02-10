@@ -13,10 +13,10 @@ This includes custom template files for Magento 2, featuring a Swiper slider on 
 
 1. Add Template Files: Copy the provided files into your Magento installation.<br />
 2. Apply the Theme:<br>
-	Navigate to Content > Design > Configuration.
-	Click Edit for Main Store / Default Store.
-	Under Applied Theme, select CustomTemplate.
-	Click Save Configuration.
+	Navigate to Content > Design > Configuration.<br>
+	Click Edit for Main Store / Default Store.<br>
+	Under Applied Theme, select CustomTemplate.<br>
+	Click Save Configuration.<br>
 
 3. Clear Cache: Flush Magento cache to apply changes.
 
