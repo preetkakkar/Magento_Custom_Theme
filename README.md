@@ -4,10 +4,10 @@ This includes custom template files for Magento 2, featuring a Swiper slider on 
 
 ## Features:
 
-✔ Responsive Design – Optimized for all devices (desktop, tablet, mobile).
-✔ Swiper Slider – Add dynamic banners on the homepage.
-✔ Mega Menu – Full-width dropdowns for better navigation.
-✔ Custom Styling – Easily update colors, fonts, and layouts.
+✔ Responsive Design – Optimized for all devices (desktop, tablet, mobile).<br>
+✔ Swiper Slider – Add dynamic banners on the homepage.<br>
+✔ Mega Menu – Full-width dropdowns for better navigation.<br>
+✔ Custom Styling – Easily update colors, fonts, and layouts.<br>
 
 ## Installation Steps:
 
