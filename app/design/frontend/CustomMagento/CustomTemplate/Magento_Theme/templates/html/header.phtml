@@ -1,0 +1,1193 @@
+
+<link rel="stylesheet" href="/pub/static/frontend/AMI/marsafe/en_US/css/swiper.css"> 
+<link rel="stylesheet" href="/pub/static/frontend/AMI/marsafe/en_US/css/megamenu.min.css"> 
+<style>
+	
+h1{
+	font-size:38px;
+	font-weight: 500;
+	line-height: 1.4;
+	margin-bottom: 30px;
+	}	
+	
+.header.content {
+	display: none;
+		
+	}
+
+.ami-header{
+	background: none;
+	color: #3A3A3C;	
+	display:flex; 
+    justify-content: space-between;
+  	flex-wrap: wrap;
+    max-width: 1120px;
+  margin: 30px auto 0 auto;
+	}
+.logo-img{
+	width: 16%;
+    float: left;
+}
+	
+.logo-img img{
+	width: 170px;
+	min-width: 170px;
+	}
+	
+.header-middle-container{
+	width: 50%;
+    float: left;
+}
+
+.featured-introtext {
+    font-size: 24px;
+    color: #3A3A3C;
+    font-weight: 600;
+}
+.header-right-container{
+	width: 28%;
+    float: right;
+	margin-top:5px;
+}
+.heading-email {
+    color: #189dd8;
+    font-size: 16px;
+    line-height: 30px;
+	font-weight: 600;
+    margin-right: 50px;
+}
+.heading-email:before {
+    display: inline-block;
+    position: relative;
+    content: url(/images/arrow-icon.png);
+    width: 7px;
+    height: 8px;
+    margin-right: 5px;
+    top: -2px;
+}
+.heading-view {
+    color: #189dd8;
+	font-size: 16px;
+    line-height: 30px;
+	font-weight: 600;
+}
+	
+a.heading-view {
+    color: #189dd8;
+}
+a:visited .heading-view {
+    color: #189dd8;
+}
+.heading-view:before {
+    display: inline-block;
+    position: relative;
+    content: url(/images/arrow-icon.png);
+    width: 7px;
+    height: 8px;
+    margin-right: 5px;
+    top: -2px;
+}
+.arrow-bullets {
+    display: inline-block;
+    color: #3a3a3a;
+    font-size: 16px;
+    line-height: 30px;
+	font-weight: 600;
+}
+a.arrow-bullets {
+    color: #3a3a3a;
+}
+a:visited .arrow-bullets {
+    color: #3a3a3a;
+}
+.arrow-bullets:before {
+    display: inline-block;
+    position: relative;
+    content: url(/images/arrow-icon.png);
+    width: 7px;
+    height: 8px;
+    margin-right: 5px;
+    top: -2px;
+}
+		
+.ami-head-nav {
+  background: #1E1E1E;	
+  margin: 0 auto;
+  padding: 0; 
+	
+}
+
+
+	
+.ami-nav-bar{
+/*	max-width: 1160px;*/
+  	margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.menu > ul {
+  
+  gap: 75px;  
+  list-style: none;
+	padding-left: 0;
+    justify-content: center;
+	display: flex;
+}
+.menu > ul li a {
+	text-decoration: none;
+	font-size: 16px;
+	padding: 0;
+	font-weight: 400;
+	width: auto;
+}
+.menu > ul li a:hover{
+	color:#00aeef;
+	text-decoration: none;
+}
+.menu > ul li:hover{
+	text-decoration: none;
+	border-bottom: none !important;
+}
+	
+
+/* Swiper CSS  */
+/*
+  .swiper-container {
+    width: var(--scrollbar-width);
+    height: auto;
+    margin-left: calc(0vw - (var(--scrollbar-width)/2) + 50%);
+  }*/
+  .swiper-content {
+    position: absolute;
+
+    max-width: 1280px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+  }
+  .swiper-slide .layer {
+    display: none;
+  }
+  .swiper-content h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 10px #fff;
+    color: #000;
+	  font-weight: 600;
+  }
+  .swiper-content h3 {
+    color: #000;
+    text-shadow: 3px 3px 10px #fff;
+    margin-bottom: 30px;
+	  font-size: 24px;
+	  line-height: 36px;
+	  font-weight: bold;
+  }
+  .swiper-content .sub-btn {
+    float: none;
+    margin-top: 0px;
+    display: inline-block;
+	background: #01AFEE;
+	color:#fff; 
+	 font-weight: bold; 
+	  border: none;
+  }
+  .swiper-content span {
+    font-size: 22px;
+  }
+  .swiper-content br {
+    display: block;
+  }
+  .swiper-slide-active .swiper-content.left {
+    top: 50% !important;
+    transition: all 0.5s;
+  }
+  .swiper-slide-prev .swiper-content.left,
+  .swiper-slide-next .swiper-content.left,
+  .swiper-slide-duplicate-prev .swiper-content.left,
+  .swiper-slide-duplicate-next .swiper-content.left {
+    top: -999px;
+    transition: all 0.5s;
+  }
+  .swiper-content.right {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 0;
+    height: 160px;
+    max-width: 330px;
+    width: 100%;
+    margin-right: 10vw;
+    transform: none;
+  }
+  .swiper-content.left {
+    max-width: 350px;
+    left: 15%;
+    width: 100%;
+    height: 190px;
+	top:50%;
+	  
+  }
+
+.swiper-content .sub-btn,
+.swiper-content .sub-btn:hover,
+.swiper-content .sub-btn:active,
+.swiper-content .sub-btn:focus {
+  color: #fff;
+  padding: 12px 40px;
+    text-transform: uppercase;
+	font-size: 20px;
+}
+
+  .swiper-container .swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 26.34069400630915%;
+  }
+	
+.swiper-button-container {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+/*	
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}*/
+:root{
+    --swiper-theme-color: #000;
+}
+.swiper-button-prev, .swiper-button-next{
+    top:20%;
+  }
+	
+.swiper-pagination{
+		right: 40px;
+		margin-top:-35px
+	}
+	
+.swiper-pagination-bullet{
+	background: #fff;
+	width: 12px;
+	height: 12px;
+	margin: 5px;
+	}
+.swiper-pagination-bullet-active{
+	background: #fff;		
+	}
+/*	
+.block-search {
+	width: 200px;
+	}
+*/
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (min-width: 1600px) {
+.menu > ul > li.mega > ul.normal-sub {
+    left: 28px;
+	}
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu > ul > li.mega > ul.normal-sub {
+    padding: 30px 20px;
+    width: var(--scrollbar-width) !important;
+    background-color: #fff;
+    color: #0e2c51;
+    margin-left: calc(0vw - (var(--scrollbar-width)/2) + 50%) !important;
+    top: 55px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+ .mega .normal-sub > li {
+    height: 700px !important;
+  }
+/*	
+.menu > ul > li.mega > ul.normal-sub {
+	padding: 30px 20px;
+	background-color: #fff;
+	color: #0e2c51;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+	width: 100vw !important;
+    margin-left: -48vw !important;
+    margin-right: -50vw;
+    left: 50%;
+    top: 55px;
+}
+	*/
+
+.mega > ul > li {
+    max-width: 1600px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    float: none !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.mob-menu-top{
+		visibility: hidden;
+	}
+
+.menu-mobile {
+    display: none;
+    padding: 20px;
+	line-height: 2px;
+}
+
+.menu-mobile:after {
+    content: '\e609';
+    font-family: 'luma-icons';
+    font-size: 2.5rem;
+    padding: 0;
+	color: #fff;
+    float: left;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+
+.menu-dropdown-icon:before {
+  /*  content: "\f489";
+    font-family: "Ionicons";*/
+	 content: '\e607';
+    font-family: 'luma-icons';
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 0.5em 2em;
+    background: #fff;
+    color: #333;
+}
+
+.menu > ul {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box;
+}
+
+.menu > ul:before,
+.menu > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul:after {
+    clear: both;
+}
+/*
+.menu > ul > li {
+    float: left;
+    background: #e9e9e9;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > ul > li a {
+    text-decoration: none;
+    padding: 1.5em 3em;
+    display: block;
+}
+
+.menu > ul > li:hover {
+    background: #f0f0f0;
+}
+*/
+.menu > ul > li > ul {
+    display: none;
+    width: 100%;
+    background: #f0f0f0;
+    padding: 20px;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li {
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+    width: 25%;
+    background: none;
+    float: left;
+}
+
+.menu > ul > li > ul > li a {
+    color: #777;
+    padding: .2em 0;
+    width: 95%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+	font-size: 15px;
+}
+
+.menu > ul > li > ul > li > ul {
+    display: block;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li > ul > li {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    font-size: .8em;
+}
+
+.menu > ul > li > ul > li > ul > li a {
+    border: 0;
+}
+
+.menu > ul > li > ul.normal-sub {
+    width: 220px;
+    left: auto;
+    padding: 10px 20px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+.menu > ul > li > ul.normal-sub > li {
+    width: 100%;
+}
+
+.menu > ul > li > ul.normal-sub > li a {
+    border: 0;
+    padding: 1em 0;
+}
+
+/********************Page Styling**************************/	
+	
+h2{
+	color: #01AFEE;
+	font-size: 34px;
+	font-style: italic;
+	font-weight: 700;
+	line-height: 54px;
+}
+	
+h3{
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 2rem;
+	font-weight: 400;
+}
+h4{
+	margin-bottom: 0.3rem;
+	margin-top: 2.5rem;
+	}	
+p{
+	margin-bottom: 2rem;	
+}
+
+ul>li{
+	margin-bottom: 2rem;
+	}
+	
+.twocol-parent-div{
+		overflow: hidden;
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+		margin-bottom: 40px;
+	}
+.twocol-left-div{
+		width: 35%;
+		display: inline-block;
+		overflow: hidden;
+		float: left;
+	}
+
+.twocol-right-div{
+		width: 60%;
+		display: inline-block;
+		overflow: hidden;
+		float: right;
+		
+	}
+
+.page-landing a{
+	color: #fff !important;
+	text-decoration: underline;
+}
+
+.page-footer {
+        margin-top: auto;
+        padding-bottom: 25px;
+        background: #0f2d53;
+        color: #fff;
+    }
+
+    .footer-container .footer {
+        width: 100% !important;
+        display: flex !important
+;
+        float: none !important;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
+	
+@media only screen and (max-width: 1790px) {
+
+
+}
+	
+@media only screen and (max-width: 1680px) {
+	
+}
+	
+@media only screen and (max-width: 1486px) {
+	
+.ami-head-nav {
+  flex-wrap: wrap;
+	}
+
+.logo-img{
+	margin: 0 auto;
+}
+	
+.ami-nav-bar{
+	width: 100%;
+    text-align: center;
+    margin-top: 10px;
+	}
+	
+.ami-searchbar{
+
+	margin: 0 auto 20px auto;
+	}
+	
+.swiper-button-prev, .swiper-button-next{
+    top:15%;
+  }
+
+}
+	
+@media only screen and (max-width: 1290px) {
+.menu > ul {
+    gap: 50px;
+	}
+	
+.swiper-content.left {
+    left: 25%;
+  }
+.swiper-container .swiper-slide{
+	background-position: center;
+	height: 80px;
+	}
+	
+.page-fullwidth-banner{
+	min-height: 400px;
+    object-fit: cover;
+	}
+}
+	
+@media only screen and (max-width: 1200px) {
+.menu > ul {
+    gap: 0px;
+	}
+
+}
+
+@media only screen and (max-width: 1120px) {
+	.logo-img{
+	width: 12%;
+	min-width: 130px;
+	}
+	.logo-img img{
+	width: 130px;
+	min-width: 130px;
+	}
+	.header-middle-container {
+    width: 40%;
+	}
+	.featured-introtext {
+    font-size: 20px;
+	}
+	.header-right-container {
+    width: 35%;
+	}
+}
+
+	
+@media only screen and (max-width: 980px) {
+ .ami-mastleft {
+    width: 42%;
+	} 
+
+.ami-mastright {
+    width: 55%;
+	}
+	
+.swiper-container .swiper-slide{
+	background-position: center;
+	height: 110px;
+	}
+}
+	
+
+
+	
+@media only screen and (max-width: 920px) {
+.ami-masthead a {
+	padding: 0 15px;
+	}
+}
+	
+@media only screen and (max-width: 900px) {
+.left-div40 {
+	width: 100%;
+	margin-bottom: 30px;
+	}
+.right-div40 {
+	width: 100%;
+	}
+.left-div45{
+	width: 100%;
+	margin-bottom: 30px;
+	}
+.right-div45{
+	width: 100%;
+	}
+	
+.right-div45 img{
+	float: left;
+	}
+}
+	
+@media only screen and (max-width: 870px) {
+	.logo-img{
+	width: 15%;
+	}
+	.header-middle-container {
+    width: 70%;
+	}
+	.header-right-container {
+    width: 85%;
+	margin: 0 auto;
+	}
+
+.menu > ul {
+    gap: 25px;
+	}
+}
+	
+@media only screen and (max-width: 840px) {
+.ami-masthead a {
+	padding: 0 10px;
+	font-size: 1.4rem;
+	}
+.menu > ul li a {
+    font-size: 15px;
+}
+	}
+	
+@media (max-width: 800px) {
+	.twocol-left-div{
+		width: 100%;
+	}
+
+	.twocol-right-div{
+		width: 100%;
+		margin-top: 20px;
+		
+	}
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+
+    .menu-mobile {
+        display: block;
+		background: #1e1e1e;
+    }
+    .menu-dropdown-icon:before {
+        display: block;
+    }
+    .menu > ul {
+        display: none;
+		margin-top:30px;
+    }
+    .menu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .menu > ul > li a {
+        padding: 10px 40px;
+        width: 100%;
+        display: block;
+	/*	color: #fff;*/
+		text-align: left;
+		font-size: 18px;
+    }
+    .menu > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul.normal-sub {
+        width: 100%;
+    }
+    .menu > ul > li > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .menu > ul > li > ul > li:first-child {
+        margin: 0;
+    }
+    .menu > ul > li > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul > li > ul > li {
+        float: none;
+    }
+    .menu .show-on-mobile {
+        display: block;
+    }
+	
+	.ami-mastleft > ul {
+        display: none;
+    }
+	.ami-mastleft > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .ami-mastleft > ul > li a {
+        padding: 1.5em;
+        width: 100%;
+        display: block;
+    }
+	
+	 .mob-menu-top  {
+		visibility: visible;
+		padding-top: 30px !important;
+    	border-top: 1px solid #fff;
+    	padding-bottom: 20px !important;
+		background: #0f2d53; 
+	}
+	
+   .menu .mob-menu-top > li a {
+		color: #fff;
+		font-weight: normal;
+    }
+	
+	.ami-masthead a {
+	font-size: 1.5rem;
+}
+
+	 .ami-mastleft .show-on-mobile {
+        display: block;
+    }
+	.ami-mastright > ul {
+        display: none;
+    }
+	.ami-mastright > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    .ami-mastright > ul > li a {
+        padding: 1.5em;
+        width: 100%;
+        display: block;
+    }
+	
+	 .ami-mastright .show-on-mobile {
+        display: block;
+    }
+	
+	.ami-nav-bar{
+		background: #1e1e1e;
+		margin: 20px 0 -1px 0;
+	}
+	
+	.block-search .label{   position: absolute;margin-top: 2px;
+    margin-left: 170px;}
+	
+	.block-search{
+		margin-top:0;
+	}
+	.block-search input {
+		margin: 0;
+	}
+	
+	.logo{
+		margin: 0;
+	}
+	
+ .swiper-content.left {
+    left: 32%;
+ 
+  }
+
+.swiper-content .sub-btn,
+.swiper-content .sub-btn:hover,
+.swiper-content .sub-btn:active,
+.swiper-content .sub-btn:focus {
+  padding: 10px 30px;
+
+}
+ .swiper-content h1 {
+    margin-bottom: 20px;
+
+  }
+.swiper-container .swiper-slide{
+	height: 150px;
+	}
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+  }	
+
+
+.three-col-flex> * {
+    margin-bottom: 50px;
+	}
+#custom-search .actions{
+	display: none;
+	}
+}
+	
+@media only screen and (max-width: 580px) {
+
+.swiper-container .swiper-slide{
+	height: 200px;
+	}
+ .swiper-content.left {
+    left: 40%;
+ 
+  }
+ .swiper-content h1 {
+    font-size: 36px;
+
+  }
+.swiper-content .sub-btn,
+.swiper-content .sub-btn:hover,
+.swiper-content .sub-btn:active,
+.swiper-content .sub-btn:focus {
+  padding: 10px 20px;
+
+	}
+
+
+}
+	
+@media only screen and (max-width: 520px) {
+
+ .swiper-content.left {
+    left: 50%;
+	}
+	.logo-img{
+	width: 33%;
+	}
+	.header-middle-container {
+    width: 70%;
+	margin:20px auto 0 auto;			
+	}
+	.header-middle-container h1{
+		margin-bottom: 20px;
+	}
+	.header-right-container {
+    width: 70%;
+	margin: 0 auto;
+	}	
+}
+	
+@media only screen and (max-width: 480px) {
+
+ .swiper-content.left {
+    left: 50%;
+	}
+	.logo-img{
+	width: 33%;
+	}
+	.header-middle-container {
+    width: 85%;
+	}
+	.header-right-container {
+    width: 85%;
+	}	
+}
+	
+@media only screen and (max-width: 360px) {
+
+	.featured-introtext {
+    font-size: 16px;
+	}
+	.heading-email {
+    font-size: 14px;
+	}
+.heading-view {
+	font-size: 14px;
+
+	}
+.arrow-bullets{
+	font-size: 14px;
+	}
+}
+
+
+</style>
+
+
+<div class="ami-header">
+	<div class="logo-img">
+		<a class="logo" href="/" title="Marsafe"><img src="/images/ami/marsafe-logo.png" alt="marsafe logo"  /></a>
+	</div>
+	<div class="header-middle-container">
+		
+	</div>
+	<div class="header-right-container">
+		
+	</div>
+   
+</div>
+
+<div class="ami-head-nav">
+	<div class="ami-nav-bar">
+		<div class="menu">
+			<ul class="clearfix">
+				<?php  echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Magento_Theme::html/topmenu/renderer.phtml")->toHtml(); ?>
+				
+				<li><a class="nav-link" href="/about">About </a>
+					<ul>
+						<li><a href="">About Company</a></li>
+                    </ul>
+				</li>
+				<li><a class="nav-link" href="/services-and-support">Services & Support</a>
+					<ul>
+						<li><a href="">System Support</a></li>
+						<li><a href="">Service</a></li>
+						<li><a href="">Support</a></li>
+						<li><a href="">Safety</a></li>
+					</ul>
+				</li> 
+				<li><a class="nav-link" href="/supply-partners">Supply Partners</a></li> 
+				<li><a class="nav-link" href="/products.html">Products</a>
+					<ul>
+						<li><a href="/products/military-antennas.html">Product1</a></li>
+						<li><a href="/products/navy-antennas.html">Product2</a></li>
+					</ul>
+				</li>
+				<li><a class="nav-link" href="/contact-us">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="nav-overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+require(['jquery'], function($) {
+
+    $(document).ready(function() {
+
+        // if($(window).width() < 974) {
+        // $(".ns_searchbar").insertBefore( $( ".menu > ul > li" ).first() );	 		
+        // }
+       document.documentElement.style.setProperty('--scrollbar-width', (document.documentElement
+            .clientWidth) + "px");
+			
+        $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+        //Checks if li has sub (ul) and adds class for toggle icon - just an UI
+
+        $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+        //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
+
+        // if($(window).width() > 974) {
+        $(".ami-nav-bar > .menu").before("<a href=\"#\" class=\"menu-mobile\"></a>");
+        // } else {
+        // 	$(".ns_mastright > .ph_mob").before("<a href=\"#\" class=\"menu-mobile\"></a>");
+        // }
+
+        //Adds menu-mobile class (for mobile toggle menu) before the normal menu
+        //Mobile menu is hidden if width is more then 959px, but normal menu is displayed
+        //Normal menu is hidden if width is below 959px, and jquery adds mobile menu
+        //Done this way so it can be used with wordpress without any trouble
+
+
+        //If width is more than 768px dropdowns are displayed on hover
+
+        $(".menu > ul > li").click(function() {
+            if ($(window).width() <= 768) {
+                $(this).children("ul").fadeToggle(150);
+		//		$(".menu").appendTo(".ami-mastleft");
+		//		$(".ami-mastleft").appendTo(".ami-mastright");
+            }
+        });
+        //If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
+
+        $(".menu-mobile").click(function(e) {
+            $(".menu > ul").toggleClass('show-on-mobile');
+		//	$(".ami-mastleft > ul").toggleClass('show-on-mobile');
+		//	$(".ami-mastright > ul").toggleClass('show-on-mobile');
+            e.preventDefault();
+        });
+		
+		
+        //when clicked on mobile-menu, normal menu is shown as a list, classic rwd menu story (thanks mwl from stackoverflow)
+
+        // $(document).on("click tap touchstart",".ns_searchicon_mob", function(e) {
+        // 	e.preventDefault();
+        // 	alert("Test!");
+        // });
+
+        $(".menu-dropdown-icon").click(function(e) {
+            if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+            } else {
+                $(this).addClass("active");
+            }
+        });
+
+       
+
+        $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+
+        $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+
+        $(".menu > ul > li").hover(function(e) {
+
+            if ($(window).width() > 768) {
+                $(this).children("ul").stop(true, false).fadeToggle(150);
+                e.preventDefault();
+            }
+        });
+
+    });
+
+
+
+});
+</script>
+
+<div class="full-width">
+	<!--<div class="full-width-home" style="background-color: #000; background-image: url('/images/slider/slider1.jpg'); background-position: center; background-repeat: no-repeat; min-height: 520px;margin-bottom: 40px; "></div>
+	-->
+
+	
+<!-- Slider main container -->
+<div class="swiper-container" >
+    <div class="swiper-wrapper">
+		
+		<div class="swiper-slide" style="background-color:#025eed; background-image: url('/images/slider/banten.png');">
+			<div class="swiper-content left">
+				<h1>Marsafe</h1>
+                <h3>Save on Life Jackets</h3>
+                <a href="/products.html" class="sub-btn">View Products</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide" style="background-color:#c9c9c9; background-image: url('/images/slider/desalination.png');">
+			<div class="swiper-content left">
+				<h1>Life Rafts</h1>
+                <h3>Service and Rent life rafts</h3>
+                <a href="" class="sub-btn">Learn More</a>
+            </div>
+        </div>
+		
+		 <div class="swiper-slide" style="background-color:#c9c9c9; background-image: url('/images/slider/AMI-Group-Focus.png');">
+			<div class="swiper-content left">
+				<h1>Download</h1>
+                <h3>Life Jacket Booklet</h3>
+                <a href="" class="sub-btn">Download</a>
+            </div>
+        </div>
+
+
+        
+       
+
+    </div>
+</div>
+	
+	  <!-- !swiper slides -->
+    
+    <!-- next / prev arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- !next / prev arrows -->
+
+    <!-- pagination dots -->
+    <div class="swiper-pagination"></div>
+    <!-- !pagination dots -->
+	
+</div>
+
+
+<script>
+require(["jquery", "swiper"], function($, Swiper) {
+    $(document).ready(function() {
+       var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+		    navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+            loop: true,
+            autoplay: {
+                delay: 6000,
+            },
+            simulateTouch: true
+        });
+    });
+
+   
+});
+</script>
+
+
+   

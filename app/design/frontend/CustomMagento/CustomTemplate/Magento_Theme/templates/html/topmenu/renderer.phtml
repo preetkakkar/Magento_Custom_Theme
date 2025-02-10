@@ -1,0 +1,49 @@
+
+
+<li class="mega nav-link"><a href="/products.html">Products&nbsp;&nbsp;<i
+                                class="fas fa-angle-down"></i></i></a>
+                        <ul>
+                            <li>
+								   <?php
+								
+								
+	
+														function categoryLoop($id, $is_sub = false){
+							$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+							$categories = $objectManager->create('Magento\Catalog\Model\Category')->load($id);
+									$subcategories = explode(',', $categories->getChildren());
+							//if($categories->hasChildren()){
+							
+								
+								foreach ($subcategories as $category) {
+									$subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($category);
+									$subsubcategories = explode(',', $subcategory->getChildren());
+							//		echo '<h4>';
+							//		echo $subcategory->getName();
+									 if ($subcategory->getData('include_in_menu')){
+									echo '<div' . (($is_sub) ? ' class="category_children"' : '') . '>';
+									  echo "<a class='catlink' href='".$subcategory->getUrl()."'><h4>".$subcategory->getName()."</h4></a>";
+									 
+							//		echo "</h4>";
+							//		if($subcategory->hasChildren()){ categoryLoop($category, true); }
+									
+									foreach ($subsubcategories as $sscategory) {
+										$sscategories = $objectManager->create('Magento\Catalog\Model\Category')->load($sscategory);
+									//	echo $sscategories->getName();
+										if ($sscategories->getData('include_in_menu')){
+										echo "<a class='subcatlink' href='".$sscategories->getUrl()."'>".$sscategories->getName()."</a>";
+										}
+
+								}
+							echo "</div>";
+									 }
+							}
+						}
+						categoryLoop(3);  // enter your category id here
+						
+						  ?>
+                            </li>
+                        </ul>
+                    </li>
+                     
+						

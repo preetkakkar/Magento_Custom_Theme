@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	  <head>
+
+        <css src="css/swiper.css" />
+
+    </head>
+    <body>
+		<referenceBlock name="header.panel.wrapper" remove="true" />
+		<referenceBlock name="catalog.compare.sidebar" remove="true"/> 
+		<referenceBlock name="catalog.compare.link" remove="true"/> <!-- Remove link in header -->
+        <referenceBlock name="related.product.addto.compare" remove="true"/> <!-- Related product -->
+        <referenceBlock name="category.product.addto.compare" remove="true"/> <!-- Category add compare -->
+        <referenceBlock name="view.addto.compare" remove="true" /> <!-- Product addto compare -->
+		<referenceBlock name="wishlist_sidebar" remove="true" />
+		<referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true" />
+		<referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true" />
+		<referenceBlock name="customer-account-navigation-account-edit-link" remove="true" />
+		<referenceBlock name="customer-account-navigation-delimiter-1" remove="true" />
+		<move element="minicart" destination="custom_header" before="topSearch" />
+        <move element="top.search" destination="custom_header" after="-" />
+		<move element="top.links" destination="custom_header" before="-" />
+        <referenceContainer name="header.container">
+        <referenceBlock name="navigation.sections" display="false" />
+		<referenceBlock name="header .content" remove="true" />
+		<referenceBlock name="header.links">
+        	<block class="Magento\Framework\View\Element\Html\Link" name="custom-header-link">
+            	<arguments>
+                	<argument name="label" xsi:type="string" translate="true">Custom Header Link</argument>
+                	<argument name="path" xsi:type="string">*/*/*</argument>
+            	</arguments>
+        	</block>
+    	</referenceBlock>
+			 
+            <block class="Magento\Framework\View\Element\Template" name="custom_header" as="custom_header" template="Magento_Theme::html/header.phtml" before="-"/>
+            
+        </referenceContainer>
+
+	<!--	<referenceBlock name="footer_links" remove="true"/>-->
+		 <referenceContainer name="footer-container">
+            <block class="Magento\Theme\Block\Html\Footer" name="footer" template="html/footer.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
