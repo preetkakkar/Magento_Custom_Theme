@@ -12,9 +12,11 @@ This includes custom template files for Magento 2, featuring a Swiper slider on 
 
 ## Mega Menu Setup:
 
-The Products Menu serves as an example of the Mega Menu, displaying main categories and subcategories.<br>
-Code to fetch categories is already included in renderer.phtml.<br>
-If needed, edit the category ID in the file for customization.<br>
+<ul>
+<li>The Products Menu serves as an example of the Mega Menu, displaying main categories and subcategories.</li>
+<li>Code to fetch categories is already included in renderer.phtml.</li>
+<li>If needed, edit the category ID in the file for customization.</li>
+</ul>
 
 ## Installation Steps:
 
