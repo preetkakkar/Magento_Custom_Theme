@@ -2,6 +2,13 @@
 
 This includes custom template files for Magento 2, featuring a Swiper slider on the home page and a Mega Menu for full-width subcategories. The theme includes the necessary JavaScript and CSS files for the Mega Menu and Swiper slider.
 
+## Features:
+
+✔ Responsive Design – Optimized for all devices (desktop, tablet, mobile).
+✔ Swiper Slider – Add dynamic banners on the homepage.
+✔ Mega Menu – Full-width dropdowns for better navigation.
+✔ Custom Styling – Easily update colors, fonts, and layouts.
+
 ## Installation Steps:
 
 1. Add Template Files: Copy the provided files into your Magento installation.<br />
